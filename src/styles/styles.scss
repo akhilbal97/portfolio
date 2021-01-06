@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+//font variables
+$alex-brush: 'Alex Brush', sans-serif;
+$raleway: 'Raleway', sans-serif;
+$font: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+//Colors
+$white: #fff;
+$black: #000000;
+$light-blue: #A8D0E6;
+$dark-blue: #374785;
+
+html, body {
+    font-family: $font;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    background-color: $light-blue;    
+}
+
+.container {
+    // width: 1640px;
+    // min-width: 1640px;
+    width: 1280px;
+    min-width: 1280px;
+    margin: 0 auto;
+    @media (max-width: 1440px) {
+      width: 1280px;
+      min-width: 1280px;
+    }
+    @media (max-width: 1280px) {
+      width: 976px;
+      min-width: 976px;
+    }
+    @media (max-width: 976px) {
+      width: 768px;
+      min-width: 768px;
+    }
+  }
+
+//Header
+header {
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    .inner-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 80px;
+        .logo {
+            position: relative;
+            a {
+                font-weight: 700;
+                text-decoration: none;
+                letter-spacing: 1.5px;
+                text-transform: uppercase;
+                color: $dark-blue;
+                margin-left: 70px;;
+            }
+            .logo-image {
+                position: absolute;
+                height: 62px;
+                width: 53px;
+                top: -16px;
+               
+            }
+        }
+        .navigation {
+            nav{
+                a{
+                    margin: 0 20px;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    color: $dark-blue;
+                    &:last-child {
+                        margin-right: 10px;
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+
+//background
+
+.background {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+    
+    
+    }
+    .row {
+        position: absolute;
+        left: 50%;
+        top: 40%;
+        transform: translateX(-50%);
+ 
+        .main-text {
+            font-family: $alex-brush;
+            font-size: 4.2rem;          
+            color: $dark-blue;
+            
+        }
+        .sub-text {
+            font-family: $raleway;
+            font-size: 1.5rem;
+            color: $dark-blue;
+        }        
+    }
+    .mountains-image {
+        width: 50%;
+        position: absolute;
+        transform: translateX(50%);
+        bottom: 0;
+        left: 0;
+
+    
+}
+
+
+//About me
+
+.about-me {
+    padding: 48px 0;
+    background: $white;
+    position: relative;
+
+}
