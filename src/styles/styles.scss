@@ -130,8 +130,34 @@ header {
 //About me
 
 .about-me {
-    padding: 48px 0;
+    
     background: $white;
     position: relative;
-
+    height: 100vh;
+    .container {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        .left-banner {
+            position: relative;
+            width: 50%;
+            height: 100vh;
+            padding-left: 20px;
+            background-color: $light-blue;
+            .about-me-image {
+                width: 65%;
+                position: absolute;
+                transform: translateY(50%);
+                left: 15%;
+        
+            }
+        }
+        .content {
+            margin-left: 25px;
+            height: 100vh;
+            position: relative;
+            width: 50%;
+            
+        }
+    }
 }

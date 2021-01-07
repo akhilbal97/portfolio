@@ -1,4 +1,4 @@
-import { Link } from "gatsby"
+import { Link } from "react-scroll"
 import React from "react"
 import Img from 'gatsby-image';
 import { useStaticQuery, graphql } from 'gatsby';
@@ -27,7 +27,7 @@ return(
           </div>
           <div className="navigation">
             <nav>
-              <Link to="/">About</Link>
+              <Link to="about-me" spy={true} smooth="easeOutCubic">About</Link>
               <Link to="/projects">Projects</Link>
               <Link to="/contact">Contact Me</Link>
             </nav>
