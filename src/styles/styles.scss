@@ -9,8 +9,11 @@ $font: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 //Colors
 $white: #fff;
 $black: #000000;
-$light-blue: #A8D0E6;
+$light-blue: #87ceeb ;
 $dark-blue: #374785;
+$teal: #60E1E0;
+$yellow: #F7CE5B;
+$purple: #AC85FF;
 
 html, body {
     font-family: $font;
@@ -72,7 +75,10 @@ header {
             }
         }
         .navigation {
+            
             nav{
+                position:fixed;
+                right: 10%;
                 a{
                     margin: 0 20px;
                     text-decoration: none;
@@ -131,33 +137,63 @@ header {
 
 .about-me {
     
-    background: $white;
+    background-color: $teal;
     position: relative;
     height: 100vh;
     .container {
         display: flex;
         flex-direction: row;
         margin: 0;
+        width: 100%;
         .left-banner {
             position: relative;
-            width: 50%;
+            width: 50vw;
             height: 100vh;
             padding-left: 20px;
-            background-color: $light-blue;
+            background-color: $teal;
             .about-me-image {
-                width: 65%;
+                margin-top: 5%;
+                width: 280px;
                 position: absolute;
                 transform: translateY(50%);
-                left: 15%;
+                left: 5%;
+               
         
             }
-        }
-        .content {
-            margin-left: 25px;
-            height: 100vh;
-            position: relative;
-            width: 50%;
+            .content {
             
+                position: relative;
+                width: 20%;
+                padding-left: 5%;
+                margin-top: 30%;
+                          
+            }
+        }
+        .right-banner {
+            height: 100vh;
+            background-color: $yellow;
+            width: 50vw;
+        }
+    }
+}
+
+// Contact me
+
+.contact-me {
+    background-color: $purple;
+    position: relative;
+    height: 100vh;
+
+    .container {
+        .contact-me-image {
+            margin-top: 5%;
+            
+            position: absolute;
+            transform: translateY(50%);
+            left: 5%;
+            width: 280px;
+            
+        
         }
     }
 }

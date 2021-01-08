@@ -23,13 +23,13 @@ return(
             <div className="logo-image">
               <Img fluid={data.placeholderImage.childImageSharp.fluid} />
             </div>
-            <Link to="/">Akhil Balachandran</Link>
+            <Link to="background" spy={true} smooth="easeOutCubic">Akhil Balachandran</Link>
           </div>
           <div className="navigation">
             <nav>
+             <Link to="background" spy={true} smooth="easeOutCubic">Home</Link>
               <Link to="about-me" spy={true} smooth="easeOutCubic">About</Link>
-              <Link to="/projects">Projects</Link>
-              <Link to="/contact">Contact Me</Link>
+              <Link to="contact-me" spy={true} smooth="easeOutCubic">Contact Me</Link>
             </nav>
           </div>
         </div>
