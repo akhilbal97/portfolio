@@ -9,11 +9,12 @@ $font: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 //Colors
 $white: #fff;
 $black: #000000;
-$light-blue: #87ceeb ;
+$light-blue: #6CD4FF ;
 $dark-blue: #374785;
 $teal: #60E1E0;
 $yellow: #F7CE5B;
-$purple: #AC85FF;
+$footer: rgb(28, 50, 92);
+$box: rgb(28, 50, 92);
 
 html, body {
     font-family: $font;
@@ -101,7 +102,7 @@ header {
     align-items: center;
     position: relative;
     height: 100vh;
-    
+    width: 100%;
     
     }
     .row {
@@ -137,9 +138,10 @@ header {
 
 .about-me {
     
-    background-color: $teal;
+    background-color: $box;
     position: relative;
     height: 100vh;
+    width: 100%;
     .container {
         display: flex;
         flex-direction: row;
@@ -147,10 +149,10 @@ header {
         width: 100%;
         .left-banner {
             position: relative;
-            width: 50vw;
+            width: 50%;
             height: 100vh;
             padding-left: 20px;
-            background-color: $teal;
+            background-color: $box;
             .about-me-image {
                 margin-top: 5%;
                 width: 280px;
@@ -163,16 +165,38 @@ header {
             .content {
             
                 position: relative;
-                width: 20%;
+                width: 70%;
                 padding-left: 5%;
-                margin-top: 30%;
-                          
+                margin-top: 200px;
+                         
+                p {
+                    font-size: 20px;
+                    color: $white;
+                    font-family: $font;
+                }
             }
         }
         .right-banner {
             height: 100vh;
-            background-color: $yellow;
-            width: 50vw;
+            background-color: $white;
+            width: 50%;
+            .dp-image {
+                position: relative;
+                width: 75%;
+                left: 15%;
+            }
+            .skills-title {
+                position: relative;
+                top: 84%;
+                width: 225px;
+                left: 18px;
+            }
+            .skills-image {
+                position: relative;
+                top: 85%;
+                width: 80%;
+                left: 18px;
+            }
         }
     }
 }
@@ -180,20 +204,68 @@ header {
 // Contact me
 
 .contact-me {
-    background-color: $purple;
+    background-color: $light-blue;
     position: relative;
     height: 100vh;
 
     .container {
         .contact-me-image {
-            margin-top: 5%;
+            margin-top: 2%;
             
             position: absolute;
             transform: translateY(50%);
-            left: 5%;
+            left: 3%;
             width: 280px;
             
         
+        }
+        .contact-box{
+            position: absolute;
+            top: 35%;
+            left: 33%;
+            color: $white;
+            width: 33%;
+            height: 250px;
+            background-color: $box;
+            border-radius: 25px;
+            p {
+                position: absolute;
+                left: 15%;
+                top: 25%;
+                font-size: 18px;
+            }
+           
+
+        }
+        .github-image {
+            position: absolute;
+            left: 45%;
+            top: 69%;
+            width: 35px;
+            
+            
+        }
+        .linkedin-image {
+            position: absolute;
+            left: 50%;
+            top: 68.5%;
+            width: 45px;
+            
+        }
+
+        .footer {
+            position: absolute;
+            background-color: $footer;
+            width: 100%;
+            height: 50px;
+            bottom: 0;
+            left: 0;
+
+            p {
+                position: absolute;
+                left: 44%;
+                color: $white;
+            }
         }
     }
 }
